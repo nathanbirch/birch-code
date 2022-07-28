@@ -1,0 +1,48 @@
+/*
+GENERAL INSTRUCTIONS:
+1. Style the tabs
+2. Style the panels
+*/
+
+body {
+  background: #eee;
+  font: 14px/1.5 Helvetica, sans-serif;
+}
+
+.tabs {
+  background: #fff;
+  border: 1px solid #0003;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 0.5em auto;
+  max-width: 800px;
+  padding: 2em;
+  width: 75%;
+}
+
+.tabslist {
+  border-bottom: 1px solid #abc;
+  margin: 0;
+  padding: 0;
+}
+
+.tabslist__tab {
+  background: none;
+  border: 0;
+  color: #000;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 -1px;
+  padding: 1em 2em;
+}
+
+.selectedTab {
+  border-top: 3px solid #cb1b00;
+  border-left: 1px solid #0003;
+  border-right: 1px solid #0003;
+  border-bottom: 1px solid white;
+}
+
+.tabs__panel {
+  margin: 0 0 -1px;
+  padding: 1em 2em;
+}

@@ -1,0 +1,68 @@
+<!--
+GENERAL INSTRUCTIONS:
+1. Any CSS or JS needs to be your own.
+2. It's okay to review online documentation.
+4. Take into account reusability. If there are multiple "tab" components on the page, your CSS and JS code should work.
+5. Is your solution accessible? How might you improve the accessibility?
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Awesome Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="./oneTabAllowed.js" defer></script> -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="tabs">
+        <div class="tabslist" role="tablist">
+            <button class="tabslist__tab" id="tab1" role="tab" aria-controls="tabpanel1" aria-selected="true">
+                Tab 1
+            </button>
+            <button class="tabslist__tab" id="tab2" role="tab" aria-controls="tabpanel2" aria-selected="false">
+                Tab 2
+            </button>
+            <button class="tabslist__tab" id="tab3" role="tab" aria-controls="tabpanel3" aria-selected="false">
+                Tab 3
+            </button>
+        </div>
+
+        <section class="tabs__panel" id="tabpanel1" role="tabpanel" aria-labelledby="tab1" hidden>
+            Tab Panel 1
+        </section>
+        <section class="tabs__panel" id="tabpanel2" role="tabpanel" aria-labelledby="tab2" hidden>
+            Tab Panel 2
+        </section>
+        <section class="tabs__panel" id="tabpanel3" role="tabpanel" aria-labelledby="tab3" hidden>
+            Tab Panel 3
+        </section>
+    </div>
+
+    <div class="tabs">
+        <div class="tabslist group" role="tablist">
+            <button class="tabslist__tab" id="tab4" role="tab" aria-controls="tabpanel4" aria-selected="true">
+                Tab 4
+            </button>
+            <button class="tabslist__tab" id="tab5" role="tab" aria-controls="tabpanel5" aria-selected="false">
+                Tab 5
+            </button>
+            <button class="tabslist__tab" id="tab6" role="tab" aria-controls="tabpanel6" aria-selected="false">
+                Tab 6
+            </button>
+        </div>
+
+        <section class="tabs__panel" id="tabpanel4" role="tabpanel" aria-labelledby="tab4" hidden>
+            Tab Panel 4
+        </section>
+        <section class="tabs__panel" id="tabpanel5" role="tabpanel" aria-labelledby="tab5" hidden>
+            Tab Panel 5
+        </section>
+        <section class="tabs__panel" id="tabpanel6" role="tabpanel" aria-labelledby="tab6" hidden>
+            Tab Panel 6
+        </section>
+    </div>
+</body>
+
+</html>
